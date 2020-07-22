@@ -25,12 +25,17 @@ const HeaderNav = styled.header`
 
   h1 {
     text-emphasis-style: bold;
+    margin: 0;
   }
 
   a {
-    margin: 0 5px;
+    margin: 0 20px;
     text-decoration: none;
     color: #000;
+
+    :last-of-type {
+      margin-right: 0;
+    }
   }
 `;
 
