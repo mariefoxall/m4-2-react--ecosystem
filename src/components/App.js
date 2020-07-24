@@ -1,9 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Header from "./Header";
 import About from "./About";
 import Home from "./Home";
+import ItemDetails from "./ItemDetails";
 
 import { createGlobalStyle } from "styled-components";
 
@@ -27,7 +28,9 @@ const App = (props) => {
         <Route path="/about">
           <About />
         </Route>
-        <Route path="/items/:itemId">Item Details</Route>
+        <Route path="/items/:itemId">
+          <ItemDetails />
+        </Route>
       </Switch>
     </Router>
   );
