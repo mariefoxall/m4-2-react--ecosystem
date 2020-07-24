@@ -82,14 +82,14 @@ const ProductOf = styled.p`
 `;
 
 const BuyButton = styled.button`
-  padding: 20px;
+  padding: 5% 20%;
   border-radius: 10px;
   background-color: #5200cc;
   color: white;
   outline: none;
   border: none;
   font-size: 20px;
-  width: 300px;
+  width: 80%;
 `;
 
 const SellerAvatar = styled.img`

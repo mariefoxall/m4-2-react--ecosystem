@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const Header = (props) => {
@@ -9,8 +9,18 @@ const Header = (props) => {
         <h1>Fruit Emporium</h1>
       </div>
       <div>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+        <NavLink
+          to="/"
+          activeStyle={{ color: "red", textDecoration: "underline" }}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/about"
+          activeStyle={{ color: "red", textDecoration: "underline" }}
+        >
+          About
+        </NavLink>
       </div>
     </HeaderNav>
   );
