@@ -10,6 +10,7 @@ const Header = (props) => {
       </div>
       <div>
         <NavLink
+          exact
           to="/"
           activeStyle={{ color: "red", textDecoration: "underline" }}
         >
